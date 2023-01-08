@@ -788,6 +788,30 @@
             margin-bottom: 20px;
             color: #031412;
         }
+        .ul{
+            display: flex;
+            position: absolute;
+            left: 48%;
+            bottom: 110px;
+            list-style-type: none;
+            padding-left: 0;
+            .disactive{
+                cursor: pointer;
+                margin-right: 20px;
+                
+            }
+            
+            .activee{
+                cursor: pointer;
+                margin-right: 20px;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: url(../../image/fon.png);
+                    left: 0;
+                }
+            }
+        }
         .inner{
             width: 1395px;
             height: 600px;
@@ -811,14 +835,40 @@
                     height: 490px;
                     cursor: pointer;
                     position: relative;
-                    &::after{
-                        content: url(../../image/heart.png);
-                        width: 50px;
-                        height: 60px;
-                        position: absolute;
-                        padding-top: 30px;
-                        right: 0;
+                    .hea{
+                        margin: 0;
+                        padding: 0;
+                        height: 80px;
+                        width: 40px;
                         background-color: #fff;
+                        right: 0;
+                        position: absolute;
+                        .heart{
+                            display: block;
+                            margin-top: 25px;
+                            margin-left: 4px;
+                            width: 30px;
+                            height: 27px;
+                            object-fit: cover;
+                        }
+                    }
+                    .hea1{
+                        margin: 0;
+                        padding: 0;
+                        height: 80px;
+                        width: 40px;
+                        position: absolute;
+                        background-color: #fff;
+                        right: 0;
+                        .heart{
+                            display: none;
+                        }
+                        &::before{
+                            content: url(../../image/union1.png);
+                            left: 4px;
+                            top: 25.5px;
+                            position: absolute;
+                        }
                     }
                     span{
                         font-size: 20px;
@@ -840,7 +890,7 @@
             width: 327px;
             height: 50px;
             font-size: 18px;
-            margin-top: 0px;
+            margin-top: 30px;
             background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
             border: none;
             color: #fff;
@@ -880,6 +930,29 @@
             padding-top: 50px;
             margin-bottom: 20px;
             color: #031412;
+        }
+        .ul{
+            display: flex;
+            position: absolute;
+            left: 48%;
+            bottom: 110px;
+            list-style-type: none;
+            padding-left: 0;
+            .disactive{
+                cursor: pointer;
+                margin-right: 20px;
+            }
+            
+            .activee{
+                cursor: pointer;
+                margin-right: 20px;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: url(../../image/fon.png);
+                    left: 0;
+                }
+            }
         }
         .inner1{
             width: 1395px;
@@ -932,7 +1005,7 @@
             width: 327px;
             height: 50px;
             font-size: 18px;
-            margin-top: 150px;
+            margin-top: 50px;
             background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
             border: none;
             color: #fff;
@@ -966,8 +1039,9 @@
         &::before{
             content: url(../../image/kalyan__fon.png);
             position: absolute;
-            top: -250px;
+            top: 0px;
             right: 33%;
+            height: 1%;
         }
         &::after{
             content: url(../../image/1+1.png);
@@ -1007,6 +1081,7 @@
                 background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
                 border: none;
                 cursor: pointer;
+                z-index: 1;
             }
         }
     }
@@ -1024,38 +1099,72 @@
             margin-bottom: 20px;
             color: #031412;
         }
-        .main__list2{
+        .ul{
             display: flex;
-            flex-wrap: wrap;
-            div{
-                display: flex;
-                flex-direction: column;
-                margin: 15px;
-                padding: 0;
-                width: 435px;
-                height: 490px;
+            position: absolute;
+            left: 48%;
+            bottom: 110px;
+            list-style-type: none;
+            padding-left: 0;
+            .disactive{
                 cursor: pointer;
+                margin-right: 20px;
+            }
+            
+            .activee{
+                cursor: pointer;
+                margin-right: 20px;
                 position: relative;
                 &::after{
-                    content: url(../../image/heart.png);
-                    width: 50px;
-                    height: 60px;
                     position: absolute;
-                    padding-top: 30px;
-                    right: 0;
-                    background-color: #fff;
+                    content: url(../../image/fon.png);
+                    left: 0;
                 }
-                span{
-                    font-size: 20px;
+            }
+        }
+        .inner2{
+            width: 1395px;
+            height: 600px;
+            margin: 0 auto;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            transition: 0.4s ease-in-out all;
+            .main__list2{
+                display: flex;
+                width: 4200px;
+                margin: 0;
+                padding: 0;
+                div{
                     display: flex;
-                    text-align: start;
-                    justify-content: space-between;
-                    margin-top: 15px;
-                    strong{
-                        width: 200px;
-                        text-align: end;
-                        font-size: 28px;
-                        margin-top: 10px;
+                    flex-direction: column;
+                    margin: 15px;
+                    padding: 0;
+                    width: 435px;
+                    height: 490px;
+                    cursor: pointer;
+                    position: relative;
+                    &::after{
+                        content: url(../../image/heart.png);
+                        width: 50px;
+                        height: 60px;
+                        position: absolute;
+                        padding-top: 30px;
+                        right: 0;
+                        background-color: #fff;
+                    }
+                    span{
+                        font-size: 20px;
+                        display: flex;
+                        text-align: start;
+                        justify-content: space-between;
+                        margin-top: 15px;
+                        strong{
+                            width: 200px;
+                            text-align: end;
+                            font-size: 28px;
+                            margin-top: 10px;
+                        }
                     }
                 }
             }
@@ -1064,7 +1173,7 @@
             width: 327px;
             height: 50px;
             font-size: 18px;
-            margin-top: 150px;
+            margin-top: 50px;
             background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
             border: none;
             color: #fff;
@@ -1076,6 +1185,7 @@
             top: 380px;
             padding: 5px 50px;
             background-color: transparent;
+            cursor: pointer;
         }
         .icrement{
             position: absolute;
@@ -1085,6 +1195,7 @@
             padding: 5px 50px;
             text-align: end;
             background-color: transparent;
+            cursor: pointer;
         }
     }
 
@@ -1101,60 +1212,94 @@
             margin-bottom: 20px;
             color: #031412;
         }
-        .main__list3{
+        .ul{
             display: flex;
-            flex-wrap: wrap;
-            div{
-                display: flex;
-                flex-direction: column;
-                margin: 15px;
-                padding: 0;
-                width: 435px;
-                height: 490px;
+            position: absolute;
+            left: 48%;
+            bottom: 110px;
+            list-style-type: none;
+            padding-left: 0;
+            .disactive{
                 cursor: pointer;
+                margin-right: 20px;
+            }
+            
+            .activee{
+                cursor: pointer;
+                margin-right: 20px;
                 position: relative;
-                &::before{
-                    display: flex;
-                    align-items: center;
-                    padding-left: 30px;
-                    top: 40px;
-                    content: 'SALE';
-                    color: #fff;
-                    position: absolute;
-                    width: 60px;
-                    height: 40px;
-                    background-color: #9B0000;
-                }
                 &::after{
-                    content: url(../../image/heart.png);
-                    width: 50px;
-                    height: 60px;
                     position: absolute;
-                    padding-top: 30px;
-                    right: 0;
-                    background-color: #fff;
+                    content: url(../../image/fon.png);
+                    left: 0;
                 }
-                span{
-                    font-size: 20px;
+            }
+        }
+        .inner3{
+            width: 1395px;
+            height: 600px;
+            margin: 0 auto;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            transition: 0.4s ease-in-out all;
+            .main__list3{
+                display: flex;
+                width: 4200px;
+                margin: 0;
+                padding: 0;
+                div{
                     display: flex;
-                    text-align: start;
-                    justify-content: space-between;
-                    margin-top: 15px;
-                    strong{
-                        text-decoration: none;
-                        text-align: end;
-                        font-size: 28px;
-                        margin-top: 10px;
-                        width: 200px;
+                    flex-direction: column;
+                    margin: 15px;
+                    padding: 0;
+                    width: 435px;
+                    height: 490px;
+                    cursor: pointer;
+                    position: relative;
+                    &::before{
                         display: flex;
-                        flex-direction: column;
-                        b{
+                        align-items: center;
+                        padding-left: 30px;
+                        top: 40px;
+                        content: 'SALE';
+                        color: #fff;
+                        position: absolute;
+                        width: 60px;
+                        height: 40px;
+                        background-color: #9B0000;
+                    }
+                    &::after{
+                        content: url(../../image/heart.png);
+                        width: 50px;
+                        height: 60px;
+                        position: absolute;
+                        padding-top: 30px;
+                        right: 0;
+                        background-color: #fff;
+                    }
+                    span{
+                        font-size: 20px;
+                        display: flex;
+                        text-align: start;
+                        justify-content: space-between;
+                        margin-top: 15px;
+                        strong{
+                            text-decoration: none;
                             text-align: end;
-                            text-decoration: line-through;
-                            color: #5a5050;
-                            margin-bottom: 0;
+                            font-size: 28px;
+                            margin-top: 10px;
+                            width: 200px;
+                            display: flex;
+                            flex-direction: column;
+                            b{
+                                text-align: end;
+                                text-decoration: line-through;
+                                color: #5a5050;
+                                margin-bottom: 0;
+                            }
+    
                         }
-
                     }
                 }
             }
@@ -1163,7 +1308,7 @@
             width: 327px;
             height: 50px;
             font-size: 18px;
-            margin-top: 150px;
+            margin-top: 50px;
             background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
             border: none;
             color: #fff;
@@ -1197,34 +1342,66 @@
                 font-size: 58px;
                 margin-bottom: 10px;
             }
-            .up__list{
+            .ul{
                 display: flex;
-                text-align: start;
-                div{
-                    box-shadow: 0 0 10px 0 #5a5050;
-                    padding: 20px 30px;
-                    margin: 20px;
-                    width: 446px;
-                    height: 332px;
+                position: absolute;
+                left: 48%;
+                bottom: 110px;
+                list-style-type: none;
+                padding-left: 0;
+                .disactive{
+                    cursor: pointer;
+                    margin-right: 20px;
+                }
+                
+                .activee{
+                    cursor: pointer;
+                    margin-right: 20px;
                     position: relative;
                     &::after{
-                        content: url(../../image/Union.png);
                         position: absolute;
-                        right: 0;
-                        top: 0;
+                        content: url(../../image/fon.png);
+                        left: 0;
                     }
-                    img{
-                        object-fit: cover;
-                        width: 63px;
-                        height: 63px;
-                    }
-                    h4{
-                        font-size: 25px;
-                        margin: 10px auto;
-                    }
-                    p{
-                        font-size: 14px;
-                        width: 376px;
+                }
+            }
+            .lister{
+                width: 1425px;
+                height: 600px;
+                margin: 0 auto;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                transition: 0.4s ease-in-out all;
+                .up__list{
+                    display: flex;
+                    text-align: start;
+                    div{
+                        box-shadow: 0 0 10px 0 #5a5050;
+                        padding: 20px 30px;
+                        margin: 20px;
+                        width: 446px;
+                        height: 332px;
+                        position: relative;
+                        &::after{
+                            content: url(../../image/Union.png);
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                        }
+                        img{
+                            object-fit: cover;
+                            width: 63px;
+                            height: 63px;
+                        }
+                        h4{
+                            font-size: 25px;
+                            margin: 10px auto;
+                        }
+                        p{
+                            font-size: 14px;
+                            width: 376px;
+                        }
                     }
                 }
             }
