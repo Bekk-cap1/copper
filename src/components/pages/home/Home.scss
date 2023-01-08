@@ -1,0 +1,1359 @@
+
+
+
+
+
+
+
+.home{
+    position: relative;
+    overflow: hidden;
+    .dicrement{
+        position: absolute;
+        left: 0;
+        top: 380px;
+        padding: 5px 50px;
+        background-color: transparent;
+        cursor: pointer;
+        border: 1px solid #fff;
+    }
+    .icrement{
+        position: absolute;
+        right: 0;
+        top: 380px;
+        transform: rotate(180deg);
+        padding: 5px 50px;
+        text-align: end;
+        border: 1px solid #fff;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .span{
+        position: absolute;
+        bottom: 120px;  
+        left: 270px;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        b{
+            .img{
+                object-fit: cover;
+                margin-right: 20px;
+            }
+        }
+        .image{
+            position: relative;
+            b{
+                position: relative;
+                &::before{
+                    content: url(../../image/fon.png);
+                    position: absolute;
+                }
+            }
+            &::before{
+                content: url(../../image/chiziq.png);
+                position: absolute;
+                top: 30px;
+                left: 5px;
+            }
+            &::after{
+                content: url(../../image/cicqon.png);
+                position: absolute;
+                bottom: -80px;
+                width: 200%;
+                left: -3px;
+            }
+        }
+    }
+    .homee{
+        width: 5760px;
+        display: flex;
+        .home__header{
+            padding: 0 262px;
+            background-image: url(../../image/BG.png);
+            background-position: 100%;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 920px;
+            margin-top: -40px;
+            color: #fff;
+            width: 1920px;
+            div{
+                b{
+                    h2{
+                        margin-top: 0;
+                        padding-top: 200px;
+                        font-size: 100px;
+                        margin-bottom: 50px;
+                    }
+                    hr{
+                        background: linear-gradient(to right, #fff, #000);
+                        margin-bottom: 50px;
+                        width: 500px;
+                        margin-left: 0;
+                    }
+                }
+                h4{
+                    font-size: 48px;
+                    width: 533px;
+                    margin-bottom: 0;
+                }
+                span{
+                    font-size: 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 400px;
+                    margin-top: 30px;
+                }
+                button{
+                    width: 400px;
+                    height: 60px;
+                    margin-top: 30px;
+                    border: none;
+                    background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+                    color: #fff;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+.main{
+    padding: 0 262px;
+    .main__header{
+        text-align: center;
+        font-size: 37px;
+        color: #031412;
+        h2{
+            margin-top: 40px;
+            margin-bottom: 0;
+        }
+        .main__header__ul{
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            width: 1396px;
+            list-style-type: none;
+            .header__li1{
+                padding-left: 0;
+                margin: 10px;
+                position: relative;
+                box-shadow: 0 0px 20px 0 #b6b6b6;
+                height: 491px;
+                &::before{
+                    content: url(../../image/miss111.png);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                &::after{
+                    content: 'Для эфирных масел';
+                    width: 100%;
+                    left: 0;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 50px;
+                }
+                img{
+                    width: 445px;
+                    height: 491px;
+                    object-fit: cover;
+                }
+                p{
+                    margin: 0;
+                    padding: 0;
+                    div{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                &:hover{
+                    span{
+                        &::before{
+                            content: url(../../image/skidka__fon1.png);
+                            position: absolute;
+                            left: 0;
+                            bottom: -10px;
+                        }
+                        &::after{
+                            content: url(../../image/aylana.png);
+                            width: 200%;
+                            position: absolute;
+                            left: -340px;
+                            top: 0px;
+                        }
+                        b{
+                            &::before{
+                                content: url(../../image/aylana3.png);
+                                position: absolute;
+                                width: 100%;
+                                bottom: 0px;
+                                left: 0;
+                            }
+                            &::after{
+                                content: url(../../image/aylana2.png);
+                                width: 100%;
+                                position: absolute;
+                                right: -90px;
+                                top: 20px;
+                            }
+                            p{
+                                &::after{
+                                    content: url(../../image/aylana4.png);
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                }
+                                &::before{
+                                    content: '-30%';
+                                    position: absolute;
+                                    color: #fff;
+                                    left: 90px;
+                                    font-size: 40px;
+                                    top: 60px;
+                                }
+                                div{
+                                    &::before{
+                                        content: '-50%';
+                                        position: absolute;
+                                        color: #fff;
+                                        left: 200px;
+                                        font-size: 67px;
+                                        top: 120px;
+                                    }
+                                    &::after{
+                                        content: '-80%';
+                                        position: absolute;
+                                        color: #fff;
+                                        left: 50px;
+                                        font-size: 100px;
+                                        top: 220px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &::after{
+                        content: 'Скидки и предложения';
+                    }
+                }
+            }
+            .header__li2{
+                padding-left: 0;
+                margin: 10px;
+                position: relative;
+                box-shadow: 0 0px 20px 0 #b6b6b6;
+                height: 491px;
+                &::before{
+                    content: url(../../image/miss222.png);
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                }
+                &::after{
+                    content: 'Для гидролатов';
+                    width: 100%;
+                    left: 0;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 50px;
+                }
+                img{
+                    width: 445px;
+                    height: 491px;
+                }
+                p{
+                    margin: 0;
+                    padding: 0;
+                    div{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                &:hover{
+                    span{
+                        &::before{
+                            content: url(../../image/skidka__fon1.png);
+                            position: absolute;
+                            left: 0;
+                            bottom: -10px;
+                        }
+                        &::after{
+                            content: url(../../image/aylana.png);
+                            width: 200%;
+                            position: absolute;
+                            left: -340px;
+                            top: 0px;
+                        }
+                        b{
+                            &::before{
+                                content: url(../../image/aylana3.png);
+                                position: absolute;
+                                width: 100%;
+                                bottom: 0px;
+                                left: 0;
+                            }
+                            &::after{
+                                content: url(../../image/aylana2.png);
+                                width: 100%;
+                                position: absolute;
+                                right: -90px;
+                                top: 20px;
+                            }
+                            p{
+                                &::after{
+                                    content: url(../../image/aylana4.png);
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                }
+                                &::before{
+                                    content: '-30%';
+                                    position: absolute;
+                                    color: #fff;
+                                    left: 90px;
+                                    font-size: 40px;
+                                    top: 60px;
+                                }
+                                div{
+                                    &::before{
+                                        content: '-50%';
+                                        position: absolute;
+                                        color: #fff;
+                                        left: 200px;
+                                        font-size: 67px;
+                                        top: 120px;
+                                    }
+                                    &::after{
+                                        content: '-80%';
+                                        position: absolute;
+                                        color: #fff;
+                                        left: 50px;
+                                        font-size: 100px;
+                                        top: 220px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &::before{
+                        // content: url(../../image/skidka.png);
+                    }
+                    &::after{
+                        content: 'Скидки и предложения';
+                    }
+                }
+            }
+            .header__li3{
+                padding-left: 0;
+                margin: 10px;
+                position: relative;
+                box-shadow: 0 0px 20px 0 #b6b6b6;
+                height: 491px;
+                &::before{
+                    content: url(../../image/miss222.png);
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                }
+                &::after{
+                    content: 'Медная посуда';
+                    width: 100%;
+                    left: 0;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 50px;
+                }
+                img{
+                    width: 445px;
+                    height: 491px;
+                }
+                p{
+                    margin: 0;
+                    padding: 0;
+                    div{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                &:hover{
+                    span{
+                        &::before{
+                            content: url(../../image/skidka__fon1.png);
+                            position: absolute;
+                            left: 0;
+                            bottom: -10px;
+                        }
+                        &::after{
+                            content: url(../../image/aylana.png);
+                            width: 200%;
+                            position: absolute;
+                            left: -340px;
+                            top: 0px;
+                        }
+                        b{
+                            &::before{
+                                content: url(../../image/aylana3.png);
+                                position: absolute;
+                                width: 100%;
+                                bottom: 0px;
+                                left: 0;
+                            }
+                            &::after{
+                                content: url(../../image/aylana2.png);
+                                width: 100%;
+                                position: absolute;
+                                right: -90px;
+                                top: 20px;
+                            }
+                            p{
+                                &::after{
+                                    content: url(../../image/aylana4.png);
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                }
+                                &::before{
+                                    content: '-30%';
+                                    position: absolute;
+                                    color: #fff;
+                                    left: 90px;
+                                    font-size: 40px;
+                                    top: 60px;
+                                }
+                                div{
+                                    &::before{
+                                        content: '-50%';
+                                        position: absolute;
+                                        color: #fff;
+                                        left: 200px;
+                                        font-size: 67px;
+                                        top: 120px;
+                                    }
+                                    &::after{
+                                        content: '-80%';
+                                        position: absolute;
+                                        color: #fff;
+                                        left: 50px;
+                                        font-size: 100px;
+                                        top: 220px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &::before{
+                        // content: url(../../image/skidka.png);
+                    }
+                    &::after{
+                        content: 'Скидки и предложения';
+                    }
+                }
+            }
+            .header__li4{
+                padding-left: 0;
+                margin: 10px;
+                position: relative;
+                box-shadow: 0 0px 20px 0 #b6b6b6;
+                height: 491px;
+                &::before{
+                    content: url(../../image/miss222.png);
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                }
+                &::after{
+                    content: 'Аксессуары из меди';
+                    width: 100%;
+                    left: 0;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 50px;
+                }
+                img{
+                    width: 445px;
+                    height: 491px;
+                }
+                p{
+                    margin: 0;
+                    padding: 0;
+                    div{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                &:hover{
+                    span{
+                        &::before{
+                            content: url(../../image/skidka__fon1.png);
+                            position: absolute;
+                            left: 0;
+                            bottom: -10px;
+                        }
+                        &::after{
+                            content: url(../../image/aylana.png);
+                            width: 200%;
+                            position: absolute;
+                            left: -340px;
+                            top: 0px;
+                        }
+                        b{
+                            &::before{
+                                content: url(../../image/aylana3.png);
+                                position: absolute;
+                                width: 100%;
+                                bottom: 0px;
+                                left: 0;
+                            }
+                            &::after{
+                                content: url(../../image/aylana2.png);
+                                width: 100%;
+                                position: absolute;
+                                right: -90px;
+                                top: 20px;
+                            }
+                            p{
+                                &::after{
+                                    content: url(../../image/aylana4.png);
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                }
+                                &::before{
+                                    content: '-30%';
+                                    position: absolute;
+                                    color: #fff;
+                                    left: 90px;
+                                    font-size: 40px;
+                                    top: 60px;
+                                }
+                                div{
+                                    &::before{
+                                        content: '-50%';
+                                        position: absolute;
+                                        color: #fff;
+                                        left: 200px;
+                                        font-size: 67px;
+                                        top: 120px;
+                                    }
+                                    &::after{
+                                        content: '-80%';
+                                        position: absolute;
+                                        color: #fff;
+                                        left: 50px;
+                                        font-size: 100px;
+                                        top: 220px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &::before{
+                        // content: url(../../image/skidka.png);
+                    }
+                    &::after{
+                        content: 'Скидки и предложения';
+                    }
+                }
+            }
+            .header__li5{
+                padding-left: 0;
+                margin: 10px;
+                position: relative;
+                box-shadow: 0 0px 20px 0 #b6b6b6;
+                height: 491px;
+                &::before{
+                    content: url(../../image/miss222.png);
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                }
+                &::after{
+                    content: 'Индивидуальный заказ';
+                    width: 100%;
+                    left: 0;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 50px;
+                }
+                img{
+                    width: 445px;
+                    height: 491px;
+                    object-fit: cover;
+                }
+                p{
+                    margin: 0;
+                    padding: 0;
+                    div{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                &:hover{
+                    span{
+                        &::before{
+                            content: url(../../image/skidka__fon1.png);
+                            position: absolute;
+                            left: 0;
+                            bottom: -10px;
+                        }
+                        &::after{
+                            content: url(../../image/aylana.png);
+                            width: 200%;
+                            position: absolute;
+                            left: -340px;
+                            top: 0px;
+                        }
+                        b{
+                            &::before{
+                                content: url(../../image/aylana3.png);
+                                position: absolute;
+                                width: 100%;
+                                bottom: 0px;
+                                left: 0;
+                            }
+                            &::after{
+                                content: url(../../image/aylana2.png);
+                                width: 100%;
+                                position: absolute;
+                                right: -90px;
+                                top: 20px;
+                            }
+                            p{
+                                &::after{
+                                    content: url(../../image/aylana4.png);
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                }
+                                &::before{
+                                    content: '-30%';
+                                    position: absolute;
+                                    color: #fff;
+                                    left: 90px;
+                                    font-size: 40px;
+                                    top: 60px;
+                                }
+                                div{
+                                    &::before{
+                                        content: '-50%';
+                                        position: absolute;
+                                        color: #fff;
+                                        left: 200px;
+                                        font-size: 67px;
+                                        top: 120px;
+                                    }
+                                    &::after{
+                                        content: '-80%';
+                                        position: absolute;
+                                        color: #fff;
+                                        left: 50px;
+                                        font-size: 100px;
+                                        top: 220px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &::before{
+                        // content: url(../../image/skidka.png);
+                    }
+                    &::after{
+                        content: 'Скидки и предложения';
+                    }
+                }
+            }
+            .header__li6{
+                padding-left: 0;
+                margin: 10px;
+                position: relative;
+                box-shadow: 0 0px 20px 0 #b6b6b6;
+                height: 491px;
+                &::before{
+                    content: url(../../image/miss222.png), '124';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0px;
+                }
+                &::after{
+                    content: 'Медная посуда';
+                    width: 100%;
+                    left: 0;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 50px;
+                }
+                img{
+                    width: 445px;
+                    height: 491px;
+                }
+                p{
+                    margin: 0;
+                    padding: 0;
+                    div{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                &:hover{
+                    span{
+                        &::before{
+                            content: url(../../image/skidka__fon1.png);
+                            position: absolute;
+                            left: 0;
+                            bottom: -10px;
+                        }
+                        &::after{
+                            content: url(../../image/aylana.png);
+                            width: 200%;
+                            position: absolute;
+                            left: -340px;
+                            top: 0px;
+                        }
+                        b{
+                            &::before{
+                                content: url(../../image/aylana3.png);
+                                position: absolute;
+                                width: 100%;
+                                bottom: 0px;
+                                left: 0;
+                            }
+                            &::after{
+                                content: url(../../image/aylana2.png);
+                                width: 100%;
+                                position: absolute;
+                                right: -90px;
+                                top: 20px;
+                            }
+                            p{
+                                &::after{
+                                    content: url(../../image/aylana4.png);
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                }
+                                &::before{
+                                    content: '-30%';
+                                    position: absolute;
+                                    color: #fff;
+                                    left: 90px;
+                                    font-size: 40px;
+                                    top: 60px;
+                                }
+                                div{
+                                    &::before{
+                                        content: '-50%';
+                                        position: absolute;
+                                        color: #fff;
+                                        left: 200px;
+                                        font-size: 67px;
+                                        top: 120px;
+                                    }
+                                    &::after{
+                                        content: '-80%';
+                                        position: absolute;
+                                        color: #fff;
+                                        left: 50px;
+                                        font-size: 100px;
+                                        top: 220px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &::before{
+                        // content: url(../../image/skidka.png);
+                    }
+                    &::after{
+                        content: 'Скидки и предложения';
+                    }
+                }
+            }
+        }
+    }
+
+    .main__inner{
+        text-align: center;
+        background-image: url(../../image/main__bg.png);
+        margin: 0 -262px;
+        height: 900px;
+        position: relative; 
+        overflow: hidden;
+        padding: 0 252px;
+        h2{
+            font-size: 50px;
+            padding-top: 50px;
+            margin-bottom: 20px;
+            color: #031412;
+        }
+        .inner{
+            width: 1395px;
+            height: 600px;
+            margin: 0 auto;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            transition: 0.4s ease-in-out all;
+            .main__list{
+                display: flex;
+                width: 4200px;
+                margin: 0;
+                padding: 0;
+                // flex-wrap: wrap;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 15px;
+                    padding: 0;
+                    width: 435px;
+                    height: 490px;
+                    cursor: pointer;
+                    position: relative;
+                    &::after{
+                        content: url(../../image/heart.png);
+                        width: 50px;
+                        height: 60px;
+                        position: absolute;
+                        padding-top: 30px;
+                        right: 0;
+                        background-color: #fff;
+                    }
+                    span{
+                        font-size: 20px;
+                        display: flex;
+                        text-align: start;
+                        justify-content: space-between;
+                        margin-top: 15px;
+                        strong{
+                            width: 200px;
+                            text-align: end;
+                            font-size: 28px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .katalog{
+            width: 327px;
+            height: 50px;
+            font-size: 18px;
+            margin-top: 0px;
+            background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        .dicrement{
+            position: absolute;
+            left: 0;
+            top: 380px;
+            padding: 5px 50px;
+            background-color: transparent;
+        }
+        .icrement{
+            position: absolute;
+            right: 0;
+            top: 380px;
+            transform: rotate(180deg);
+            padding: 5px 50px;
+            text-align: end;
+            background-color: transparent;
+        }
+        .none{
+            display: none;
+        }
+    }
+    .main__inner1{
+        text-align: center;
+        height: 900px;
+        margin: 0 -262px;
+        padding: 0 262px;
+        position: relative; 
+        overflow: hidden;
+        margin: 0 -262px;
+        padding: 0 262px;
+        h2{
+            font-size: 50px;
+            padding-top: 50px;
+            margin-bottom: 20px;
+            color: #031412;
+        }
+        .inner1{
+            width: 1395px;
+            height: 600px;
+            margin: 0 auto;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            transition: 0.4s ease-in-out all;
+            .main__list1{
+                display: flex;
+                    width: 4200px;
+                    margin: 0;
+                    padding: 0;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 15px;
+                    padding: 0;
+                    width: 435px;
+                    height: 490px;
+                    cursor: pointer;
+                    position: relative;
+                    &::after{
+                        content: url(../../image/heart.png);
+                        width: 50px;
+                        height: 60px;
+                        position: absolute;
+                        padding-top: 30px;
+                        right: 0;
+                        background-color: #fff;
+                    }
+                    span{
+                        font-size: 20px;
+                        display: flex;
+                        text-align: start;
+                        justify-content: space-between;
+                        margin-top: 15px;
+                        strong{
+                            width: 200px;
+                            text-align: end;
+                            font-size: 28px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .katalog{
+            width: 327px;
+            height: 50px;
+            font-size: 18px;
+            margin-top: 150px;
+            background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        .dicrement{
+            position: absolute;
+            left: 0;
+            top: 380px;
+            padding: 5px 50px;
+            background-color: transparent;
+        }
+        .icrement{
+            position: absolute;
+            right: 0;
+            top: 380px;
+            transform: rotate(180deg);
+            padding: 5px 50px;
+            text-align: end;
+            background-color: transparent;
+        }
+    }
+    // #25463A
+    .main__copper{
+        background: linear-gradient(90deg, #25463A 99%, #72664B 1%) ;
+        color: #fff;
+        height: 483px;
+        margin: 0 -262px;
+        padding: 0 262px;
+        position: relative;
+        &::before{
+            content: url(../../image/kalyan__fon.png);
+            position: absolute;
+            top: -250px;
+            right: 33%;
+        }
+        &::after{
+            content: url(../../image/1+1.png);
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .copper__inner{
+            &::before{
+                content: url(../../image/podstavka.png);
+                position: absolute;
+                bottom: -43px;
+                right: 40%;
+            }
+            &::after{
+                content: url(../../image/kalyan.png);
+                position: absolute;
+                top: 20px;
+                right: 39%;
+            }
+            position: relative;
+            h2{
+                font-size: 140px;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-top: 40px;
+            }
+            h4{
+                font-size: 35px;
+                width: 500px;
+                margin-bottom: 30px;
+            }
+            button{
+                width: 327px;
+                height: 50px;
+                color: #fff;
+                background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    .main__inner2{
+        text-align: center;
+        margin: 0 -262px;
+        padding: 0 262px;
+        height: 900px;
+        position: relative; 
+        h2{
+            font-size: 50px;
+            padding-top: 50px;
+            margin-bottom: 20px;
+            color: #031412;
+        }
+        .main__list2{
+            display: flex;
+            flex-wrap: wrap;
+            div{
+                display: flex;
+                flex-direction: column;
+                margin: 15px;
+                padding: 0;
+                width: 435px;
+                height: 490px;
+                cursor: pointer;
+                position: relative;
+                &::after{
+                    content: url(../../image/heart.png);
+                    width: 50px;
+                    height: 60px;
+                    position: absolute;
+                    padding-top: 30px;
+                    right: 0;
+                    background-color: #fff;
+                }
+                span{
+                    font-size: 20px;
+                    display: flex;
+                    text-align: start;
+                    justify-content: space-between;
+                    margin-top: 15px;
+                    strong{
+                        width: 200px;
+                        text-align: end;
+                        font-size: 28px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        .katalog{
+            width: 327px;
+            height: 50px;
+            font-size: 18px;
+            margin-top: 150px;
+            background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        .dicrement{
+            position: absolute;
+            left: 0;
+            top: 380px;
+            padding: 5px 50px;
+            background-color: transparent;
+        }
+        .icrement{
+            position: absolute;
+            right: 0;
+            top: 380px;
+            transform: rotate(180deg);
+            padding: 5px 50px;
+            text-align: end;
+            background-color: transparent;
+        }
+    }
+
+    .main__inner3{
+        text-align: center;
+        background-image: url(../../image/main__bg.png);
+        margin: 0 -262px;
+        padding: 0 262px;
+        height: 900px;
+        position: relative; 
+        h2{
+            font-size: 50px;
+            padding-top: 50px;
+            margin-bottom: 20px;
+            color: #031412;
+        }
+        .main__list3{
+            display: flex;
+            flex-wrap: wrap;
+            div{
+                display: flex;
+                flex-direction: column;
+                margin: 15px;
+                padding: 0;
+                width: 435px;
+                height: 490px;
+                cursor: pointer;
+                position: relative;
+                &::before{
+                    display: flex;
+                    align-items: center;
+                    padding-left: 30px;
+                    top: 40px;
+                    content: 'SALE';
+                    color: #fff;
+                    position: absolute;
+                    width: 60px;
+                    height: 40px;
+                    background-color: #9B0000;
+                }
+                &::after{
+                    content: url(../../image/heart.png);
+                    width: 50px;
+                    height: 60px;
+                    position: absolute;
+                    padding-top: 30px;
+                    right: 0;
+                    background-color: #fff;
+                }
+                span{
+                    font-size: 20px;
+                    display: flex;
+                    text-align: start;
+                    justify-content: space-between;
+                    margin-top: 15px;
+                    strong{
+                        text-decoration: none;
+                        text-align: end;
+                        font-size: 28px;
+                        margin-top: 10px;
+                        width: 200px;
+                        display: flex;
+                        flex-direction: column;
+                        b{
+                            text-align: end;
+                            text-decoration: line-through;
+                            color: #5a5050;
+                            margin-bottom: 0;
+                        }
+
+                    }
+                }
+            }
+        }
+        .katalog{
+            width: 327px;
+            height: 50px;
+            font-size: 18px;
+            margin-top: 150px;
+            background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        .dicrement{
+            position: absolute;
+            left: 0;
+            top: 380px;
+            padding: 5px 50px;
+            background-color: transparent;
+        }
+        .icrement{
+            position: absolute;
+            right: 0;
+            top: 380px;
+            transform: rotate(180deg);
+            padding: 5px 50px;
+            text-align: end;
+            background-color: transparent;
+        }
+    }
+
+    .main__footer{
+        .main__footer__up{
+            text-align: center;
+            position: relative;
+            margin: 0 -262px;
+            padding: 0 262px;
+            h2{
+                font-size: 58px;
+                margin-bottom: 10px;
+            }
+            .up__list{
+                display: flex;
+                text-align: start;
+                div{
+                    box-shadow: 0 0 10px 0 #5a5050;
+                    padding: 20px 30px;
+                    margin: 20px;
+                    width: 446px;
+                    height: 332px;
+                    position: relative;
+                    &::after{
+                        content: url(../../image/Union.png);
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+                    img{
+                        object-fit: cover;
+                        width: 63px;
+                        height: 63px;
+                    }
+                    h4{
+                        font-size: 25px;
+                        margin: 10px auto;
+                    }
+                    p{
+                        font-size: 14px;
+                        width: 376px;
+                    }
+                }
+            }
+            .dicrement{
+                position: absolute;
+                left: 0;
+                top: 250px;
+                padding: 5px 50px;
+                background-color: transparent;
+            }
+            .icrement{
+                position: absolute;
+                right: 0;
+                top: 250px;
+                transform: rotate(180deg);
+                padding: 5px 50px;
+                text-align: end;
+                background-color: transparent;
+            }
+        }
+
+        .main__footer__down{
+            text-align: center;
+            background-image: url(../../image/main__bg.png);
+            background-size: 100%;
+            background-position: 100%;
+            margin: 0 -262px;
+            padding: 0 202px;
+            h2{
+                font-size: 50px;
+                padding-top: 50px;
+            }
+            .down__list{
+                display: flex;
+                flex-wrap: wrap;
+                height: 726px;
+                text-align: start;
+                div{
+                    width: 308px;
+                    height: 225px;
+                    margin: 29px;
+                    h6{
+                        font-size: 20px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                    span{
+                        color: #72664B;
+                        background: linear-gradient(92.09deg, #5E3928 -79.4%, #E4A16F 84.12%);
+                        cursor: pointer;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                    }
+                }
+                .down__item2{
+                    position: relative;
+                    &::before{
+                        content: url(../../image/main2.png);
+                        position: absolute;
+                        top: 15px;
+                        object-fit: cover;
+                        left: 18px;
+                    }
+                }
+                .down__item3{
+                    position: relative;
+                    &::before{
+                        content: url(../../image/main333.png);
+                        position: absolute;
+                        top: 15px;
+                        object-fit: cover;
+                        left: 18px;
+                    }
+                }
+                .down__item4{
+                    position: relative;
+                    &::before{
+                        content: url(../../image/main444.png);
+                        position: absolute;
+                        top: 15px;
+                        object-fit: cover;
+                        left: 18px;
+                    }
+                }
+                .down__item5{
+                    position: relative;
+                    &::before{
+                        content: url(../../image/main555.png);
+                        position: absolute;
+                        top: 15px;
+                        object-fit: cover;
+                        left: 18px;
+                    }
+                }
+                .down__item6{
+                    position: relative;
+                    &::before{
+                        content: url(../../image/main666.png);
+                        position: absolute;
+                        top: 15px;
+                        object-fit: cover;
+                        left: 18px;
+                    }
+                }
+                .down__item7{
+                    position: relative;
+                    &::before{
+                        content: url(../../image/main777.png);
+                        position: absolute;
+                        top: 15px;
+                        object-fit: cover;
+                        left: 18px;
+                    }
+                }
+                .down__item8{
+                    position: relative;
+                    &::before{
+                        content: url(../../image/main888.png);
+                        position: absolute;
+                        top: 15px;
+                        object-fit: cover;
+                        left: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
