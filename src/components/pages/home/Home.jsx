@@ -78,8 +78,10 @@ function Home() {
     
 
   return (
+    <>
     <div className='container'>
-        <Header/>
+
+      <Header/>
         <header>
             <div className='home'>
                 <div className='homee'  ref={sliderWrap}>
@@ -607,6 +609,7 @@ function Home() {
         </main>
         <Footer/>
     </div>
+    </>
   )
 }
 
