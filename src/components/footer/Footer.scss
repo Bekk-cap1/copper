@@ -1,16 +1,18 @@
 
-
-.footer{
+.foooter{
     background: linear-gradient(130deg, #72664B -10%, #25463A 40%) ;
     height: 500px;
+    width: 100%;
+}
+.footer{
     padding: 0 262px;
     position: relative;
-
     .footer__inner{
         color: #fff;
         display: flex;
         justify-content: space-between;
         padding-top: 100px;
+        margin-bottom: 0;
         .inner__left{
             img{
                 object-fit: cover;
@@ -55,7 +57,7 @@
             }
         }
         button{
-            bottom: 40px;
+            bottom: -12px;
             position: absolute;
             background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
             right: 150px;

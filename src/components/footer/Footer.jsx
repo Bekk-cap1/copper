@@ -10,6 +10,8 @@ import { Link } from 'react-router-dom'
 function Footer() {
     const {value, setValue} = useContext(Context)
   return (
+    <div className="foooter">
+
     <div className='container'>
         <div className="footer">
             <div className="footer__inner">
@@ -51,6 +53,7 @@ function Footer() {
                 <button onClick={()=>{window.scrollTo({top:0})}}>ВВЕРХ</button>
             </div>
         </div>
+    </div>
     </div>
   )
 }

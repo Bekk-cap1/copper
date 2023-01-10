@@ -1,14 +1,19 @@
 
-
-.header__logo{
+.contai{
+    width: 100%;
+    margin: 0 auto;
     background: linear-gradient(to right, #72664B, #25463A) ;
+}
+.header__logo{
     padding: 0 262px;
     padding-top: 20px;
+    margin: 0 auto;
     position: static;
     height: 140px;
     color: #fff;
     display: flex;
     justify-content: space-between;
+    width: 1920px;
     .header__left{
         display: flex;
         justify-content: space-between;
@@ -52,4 +57,8 @@
             }
         }
     }
+}
+a{
+    text-decoration: none;
+    color: #fff;
 }
