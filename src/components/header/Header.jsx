@@ -4,17 +4,26 @@ import Header__img from '../image/header__logo.png'
 import Heart from '../image/heart.png'
 import Shop from '../image/shop.png'
 import User from '../image/user.png'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <div className='container'>
+    <div className='contai'>
         <div className="header__logo">
           <ul className='header__left'>
-            <img src={Header__img} alt="" />
-            <li>Каталог</li>
-            <li>Новости</li>
+            <Link to='/home'>
+              <img src={Header__img} alt="" />
+            </Link>
+            <Link to='/catalog'>
+              <li>Каталог</li>
+            </Link>
+            <Link to='/news'>
+              <li>Новости</li>
+            </Link>
             <li>Доставка</li>
-            <li>О нас</li>
+            <Link to='/about'>
+              <li>О нас</li>
+            </Link>
             <li>Контакты</li>
           </ul>
           <ul className='header__right'>

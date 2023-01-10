@@ -3,117 +3,121 @@
 
 
 
-
-
-.home{
-    position: relative;
-    overflow: hidden;
-    .dicrement{
-        position: absolute;
-        left: 0;
-        top: 380px;
-        padding: 5px 50px;
-        background-color: transparent;
-        cursor: pointer;
-        border: 1px solid #fff;
-    }
-    .icrement{
-        position: absolute;
-        right: 0;
-        top: 380px;
-        transform: rotate(180deg);
-        padding: 5px 50px;
-        text-align: end;
-        border: 1px solid #fff;
-        background-color: transparent;
-        cursor: pointer;
-    }
-    .span{
-        position: absolute;
-        bottom: 120px;  
-        left: 270px;
-        display: flex;
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        b{
-            .img{
-                object-fit: cover;
-                margin-right: 20px;
-            }
+.he{
+    width: 100%;
+    background-image: url(../../image/BG.png);
+        background-position: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    .home{
+        position: relative;
+        overflow: hidden;
+        width: 1920px;
+        margin: 0 auto;
+        .dicrement{
+            position: absolute;
+            left: 0;
+            top: 380px;
+            padding: 5px 50px;
+            background-color: transparent;
+            cursor: pointer;
+            border: 1px solid #fff;
         }
-        .image{
-            position: relative;
+        .icrement{
+            position: absolute;
+            right: 0;
+            top: 380px;
+            transform: rotate(180deg);
+            padding: 5px 50px;
+            text-align: end;
+            border: 1px solid #fff;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        .span{
+            position: absolute;
+            bottom: 120px;  
+            left: 270px;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
             b{
-                position: relative;
-                &::before{
-                    content: url(../../image/fon.png);
-                    position: absolute;
+                .img{
+                    object-fit: cover;
+                    margin-right: 20px;
                 }
             }
-            &::before{
-                content: url(../../image/chiziq.png);
-                position: absolute;
-                top: 30px;
-                left: 5px;
-            }
-            &::after{
-                content: url(../../image/cicqon.png);
-                position: absolute;
-                bottom: -80px;
-                width: 200%;
-                left: -3px;
+            .image{
+                position: relative;
+                b{
+                    position: relative;
+                    &::before{
+                        content: url(../../image/fon.png);
+                        position: absolute;
+                    }
+                }
+                &::before{
+                    content: url(../../image/chiziq.png);
+                    position: absolute;
+                    top: 30px;
+                    left: 5px;
+                }
+                &::after{
+                    content: url(../../image/cicqon.png);
+                    position: absolute;
+                    bottom: -80px;
+                    width: 200%;
+                    left: -3px;
+                }
             }
         }
-    }
-    .homee{
-        width: 300%;
-        display: flex;
-        .home__header{
-            padding: 0 262px;
-            background-image: url(../../image/BG.png);
-            background-position: 100%;
-            background-size: 100%;
-            background-repeat: no-repeat;
-            height: 920px;
-            margin-top: -40px;
-            color: #fff;
-            width: 1920px;
-            div{
-                b{
-                    h2{
-                        margin-top: 0;
-                        padding-top: 200px;
-                        font-size: 100px;
-                        margin-bottom: 50px;
+        .homee{
+            width: 5720px;
+            display: flex;
+            margin: 0 auto;
+            .home__header{
+                padding: 0 262px;
+                height: 920px;
+                margin-top: -40px;
+                color: #fff;
+                width: 1920px;
+                div{
+                    b{
+                        h2{
+                            margin-top: 0;
+                            padding-top: 200px;
+                            font-size: 100px;
+                            margin-bottom: 50px;
+                        }
+                        hr{
+                            background: linear-gradient(to right, #fff, #000);
+                            margin-bottom: 50px;
+                            width: 500px;
+                            margin-left: 0;
+                        }
                     }
-                    hr{
-                        background: linear-gradient(to right, #fff, #000);
-                        margin-bottom: 50px;
-                        width: 500px;
-                        margin-left: 0;
+                    h4{
+                        font-size: 48px;
+                        width: 533px;
+                        margin-bottom: 0;
                     }
-                }
-                h4{
-                    font-size: 48px;
-                    width: 533px;
-                    margin-bottom: 0;
-                }
-                span{
-                    font-size: 30px;
-                    display: flex;
-                    justify-content: space-between;
-                    width: 400px;
-                    margin-top: 30px;
-                }
-                button{
-                    width: 400px;
-                    height: 60px;
-                    margin-top: 30px;
-                    border: none;
-                    background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
-                    color: #fff;
-                    font-size: 30px;
+                    span{
+                        font-size: 30px;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 400px;
+                        margin-top: 30px;
+                    }
+                    button{
+                        width: 400px;
+                        height: 60px;
+                        margin-top: 30px;
+                        border: none;
+                        background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+                        color: #fff;
+                        font-size: 30px;
+                    }
                 }
             }
         }
@@ -121,11 +125,12 @@
 }
 
 .main{
-    padding: 0 262px;
+    padding: 0;
     .main__header{
         text-align: center;
         font-size: 37px;
         color: #031412;
+        padding: 0 262px;
         h2{
             margin-top: 40px;
             margin-bottom: 0;
@@ -774,156 +779,157 @@
         }
     }
 
-    .main__inner{
-        text-align: center;
+    .mainn{
+        width: 100%;
         background-image: url(../../image/main__bg.png);
-        margin: 0 -262px;
-        height: 900px;
-        position: relative; 
-        overflow: hidden;
-        padding: 0 252px;
-        h2{
-            font-size: 50px;
-            padding-top: 50px;
-            margin-bottom: 20px;
-            color: #031412;
-        }
-        .ul{
-            display: flex;
-            position: absolute;
-            left: 48%;
-            bottom: 110px;
-            list-style-type: none;
-            padding-left: 0;
-            .disactive{
-                cursor: pointer;
-                margin-right: 20px;
-                
+        padding: 0;
+        .main__inner{
+            text-align: center;
+            height: 900px;
+            position: relative;  
+            overflow: hidden;
+            padding: 0 262px;
+            h2{
+                font-size: 50px;
+                padding-top: 50px;
+                margin-bottom: 20px;
+                color: #031412;
             }
-            
-            .activee{
-                cursor: pointer;
-                margin-right: 20px;
-                position: relative;
-                &::after{
-                    position: absolute;
-                    content: url(../../image/fon.png);
-                    left: 0;
+            .ul{
+                display: flex;
+                position: absolute;
+                left: 48%;
+                bottom: 110px;
+                list-style-type: none;
+                padding-left: 0;
+                .disactive{
+                    cursor: pointer;
+                    margin-right: 20px;
+                    
+                }
+                
+                .activee{
+                    cursor: pointer;
+                    margin-right: 20px;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: url(../../image/fon.png);
+                        left: 0;
+                    }
                 }
             }
-        }
-        .inner{
-            width: 1395px;
-            height: 600px;
-            margin: 0 auto;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            transition: 0.4s ease-in-out all;
-            .main__list{
-                display: flex;
-                width: 4200px;
+            .inner{
+                width: 1395px;
+                height: 600px;
+                margin: 0 auto;
                 margin: 0;
                 padding: 0;
-                // flex-wrap: wrap;
-                div{
+                overflow: hidden;
+                transition: 0.4s ease-in-out all;
+                .main__list{
                     display: flex;
-                    flex-direction: column;
-                    margin: 15px;
+                    width: 4200px;
+                    margin: 0;
                     padding: 0;
-                    width: 435px;
-                    height: 490px;
-                    cursor: pointer;
-                    position: relative;
-                    .hea{
-                        margin: 0;
-                        padding: 0;
-                        height: 80px;
-                        width: 40px;
-                        background-color: #fff;
-                        right: 0;
-                        position: absolute;
-                        .heart{
-                            display: block;
-                            margin-top: 25px;
-                            margin-left: 4px;
-                            width: 30px;
-                            height: 27px;
-                            object-fit: cover;
-                        }
-                    }
-                    .hea1{
-                        margin: 0;
-                        padding: 0;
-                        height: 80px;
-                        width: 40px;
-                        position: absolute;
-                        background-color: #fff;
-                        right: 0;
-                        .heart{
-                            display: none;
-                        }
-                        &::before{
-                            content: url(../../image/union1.png);
-                            left: 4px;
-                            top: 25.5px;
-                            position: absolute;
-                        }
-                    }
-                    span{
-                        font-size: 20px;
+                    // flex-wrap: wrap;
+                    div{
                         display: flex;
-                        text-align: start;
-                        justify-content: space-between;
-                        margin-top: 15px;
-                        strong{
-                            width: 200px;
-                            text-align: end;
-                            font-size: 28px;
-                            margin-top: 10px;
+                        flex-direction: column;
+                        margin: 15px;
+                        padding: 0;
+                        width: 435px;
+                        height: 490px;
+                        cursor: pointer;
+                        position: relative;
+                        .hea{
+                            margin: 0;
+                            padding: 0;
+                            height: 80px;
+                            width: 40px;
+                            background-color: #fff;
+                            right: 0;
+                            position: absolute;
+                            .heart{
+                                display: block;
+                                margin-top: 25px;
+                                margin-left: 4px;
+                                width: 30px;
+                                height: 27px;
+                                object-fit: cover;
+                            }
+                        }
+                        .hea1{
+                            margin: 0;
+                            padding: 0;
+                            height: 80px;
+                            width: 40px;
+                            position: absolute;
+                            background-color: #fff;
+                            right: 0;
+                            .heart{
+                                display: none;
+                            }
+                            &::before{
+                                content: url(../../image/union1.png);
+                                left: 4px;
+                                top: 25.5px;
+                                position: absolute;
+                            }
+                        }
+                        span{
+                            font-size: 20px;
+                            display: flex;
+                            text-align: start;
+                            justify-content: space-between;
+                            margin-top: 15px;
+                            strong{
+                                width: 200px;
+                                text-align: end;
+                                font-size: 28px;
+                                margin-top: 10px;
+                            }
                         }
                     }
                 }
             }
-        }
-        .katalog{
-            width: 327px;
-            height: 50px;
-            font-size: 18px;
-            margin-top: 30px;
-            background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
-            border: none;
-            color: #fff;
-            cursor: pointer;
-        }
-        .dicrement{
-            position: absolute;
-            left: 0;
-            top: 380px;
-            padding: 5px 50px;
-            background-color: transparent;
-        }
-        .icrement{
-            position: absolute;
-            right: 0;
-            top: 380px;
-            transform: rotate(180deg);
-            padding: 5px 50px;
-            text-align: end;
-            background-color: transparent;
-        }
-        .none{
-            display: none;
+            .katalog{
+                width: 327px;
+                height: 50px;
+                font-size: 18px;
+                margin-top: 30px;
+                background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+                border: none;
+                color: #fff;
+                cursor: pointer;
+            }
+            .dicrement{
+                position: absolute;
+                left: 0;
+                top: 380px;
+                padding: 5px 50px;
+                background-color: transparent;
+            }
+            .icrement{
+                position: absolute;
+                right: 0;
+                top: 380px;
+                transform: rotate(180deg);
+                padding: 5px 50px;
+                text-align: end;
+                background-color: transparent;
+            }
+            .none{
+                display: none;
+            }
         }
     }
     .main__inner1{
         text-align: center;
         height: 900px;
-        margin: 0 -262px;
-        padding: 0 262px;
+        margin: 0 auto;
         position: relative; 
         overflow: hidden;
-        margin: 0 -262px;
         padding: 0 262px;
         h2{
             font-size: 50px;
@@ -1029,67 +1035,73 @@
         }
     }
     // #25463A
-    .main__copper{
-        background: linear-gradient(90deg, #25463A 99%, #72664B 1%) ;
-        color: #fff;
-        height: 483px;
-        margin: 0 -262px;
-        padding: 0 262px;
-        position: relative;
-        &::before{
-            content: url(../../image/kalyan__fon.png);
-            position: absolute;
-            top: 0px;
-            right: 33%;
-            height: 1%;
-        }
-        &::after{
-            content: url(../../image/1+1.png);
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-        .copper__inner{
+    .coppper{
+        width: 100%;
+        background: linear-gradient(92deg, #72664B 0.2%, #25463A 98%) ;
+        
+        .main__copper{
+            width: 1920px;
+            color: #fff;
+            height: 483px;
+            margin: 0 auto;
+            padding: 0 262px;
+            position: relative;
             &::before{
-                content: url(../../image/podstavka.png);
+                content: url(../../image/kalyan__fon.png);
                 position: absolute;
-                bottom: -43px;
-                right: 40%;
+                top: 0px;
+                right: 33%;
+                height: 1%;
             }
             &::after{
-                content: url(../../image/kalyan.png);
+                content: url(../../image/1+1.png);
                 position: absolute;
-                top: 20px;
-                right: 39%;
+                top: 0;
+                right: 0;
             }
-            position: relative;
-            h2{
-                font-size: 140px;
-                margin-top: 0;
-                margin-bottom: 0;
-                padding-top: 40px;
-            }
-            h4{
-                font-size: 35px;
-                width: 500px;
-                margin-bottom: 30px;
-            }
-            button{
-                width: 327px;
-                height: 50px;
-                color: #fff;
-                background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
-                border: none;
-                cursor: pointer;
-                z-index: 1;
+            .copper__inner{
+                &::before{
+                    content: url(../../image/podstavka.png);
+                    position: absolute;
+                    bottom: -43px;
+                    right: 40%;
+                }
+                &::after{
+                    content: url(../../image/kalyan.png);
+                    position: absolute;
+                    top: 20px;
+                    right: 39%;
+                }
+                position: relative;
+                h2{
+                    font-size: 140px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    padding-top: 40px;
+                }
+                h4{
+                    font-size: 35px;
+                    width: 500px;
+                    margin-bottom: 30px;
+                }
+                button{
+                    width: 327px;
+                    height: 50px;
+                    color: #fff;
+                    background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+                    border: none;
+                    cursor: pointer;
+                    z-index: 1;
+                }
             }
         }
+
     }
 
 
     .main__inner2{
         text-align: center;
-        margin: 0 -262px;
+        margin: 0 auto;
         padding: 0 262px;
         height: 900px;
         position: relative; 
@@ -1199,13 +1211,17 @@
         }
     }
 
+    .mainn3{
+        width: 100%;
+        background-image: url(../../image/main__bg.png);
+    }
     .main__inner3{
         text-align: center;
-        background-image: url(../../image/main__bg.png);
-        margin: 0 -262px;
+        margin: 0 auto;
         padding: 0 262px;
         height: 900px;
         position: relative; 
+        width: 1920px;
         h2{
             font-size: 50px;
             padding-top: 50px;
@@ -1336,7 +1352,8 @@
         .main__footer__up{
             text-align: center;
             position: relative;
-            margin: 0 -262px;
+            margin: 0 auto;
+            width: 1920px;
             padding: 0 262px;
             h2{
                 font-size: 58px;

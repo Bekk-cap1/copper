@@ -4,12 +4,12 @@ import Logo from '../image/header__logo.png'
 import Twitter from '../image/Twitter.png'
 import Facebook from '../image/Facebook.png'
 import Insta from '../image/Insta.png'
-import { Context } from '../Context/Context'
 import { Link } from 'react-router-dom'
 
 function Footer() {
-    const {value, setValue} = useContext(Context)
   return (
+    <div className="foooter">
+
     <div className='container'>
         <div className="footer">
             <div className="footer__inner">
@@ -51,6 +51,7 @@ function Footer() {
                 <button onClick={()=>{window.scrollTo({top:0})}}>ВВЕРХ</button>
             </div>
         </div>
+    </div>
     </div>
   )
 }
