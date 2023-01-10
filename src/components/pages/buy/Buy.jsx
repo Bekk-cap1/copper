@@ -47,7 +47,7 @@ function Buy() {
                                 <h3>{id * seter.price} грн</h3>
                                 <hr />
                                 <h4>У вас бесплатная <br /> доставка! </h4>
-                                <Link>
+                                <Link to='/succefull'>
                                     <button>Оформить заказ</button>
                                 </Link>
                             </div>
