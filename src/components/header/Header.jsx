@@ -17,9 +17,13 @@ function Header() {
             <Link to='/catalog'>
               <li>Каталог</li>
             </Link>
+<<<<<<< HEAD
             <Link to='/news'>
               <li>Новости</li>
             </Link>
+=======
+            <li>Новости</li>
+>>>>>>> 99487e41f2ad414d2e36b9667eb22e787b8eb897
             <li>Доставка</li>
             <Link to='/about'>
               <li>О нас</li>
