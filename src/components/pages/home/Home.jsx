@@ -64,7 +64,7 @@ function Home() {
     const sliderWrap = useRef()
     const [lion, setLion] = useState(0)
     useEffect(() => {
-        sliderWrap.current.style.transform = `translate(${lion}px)`
+        sliderWrap.current.style.transform = `translate(${lion}%)`
         sliderWrap.current.style.transition = `0.4s ease-in-out`
     }, [lion])
 
@@ -118,16 +118,16 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <button className='dicrement' onClick={() => lion < 0 ? setLion(lion + 1920) : setLion(0)}><img src={Vector2} alt="" /></button>
-                    <button className='icrement' onClick={() => lion < -3740 ? setLion(0) : setLion(lion - 1920)}><img src={Vector2} alt="" /></button>
+                    <button className='dicrement' onClick={() => lion > -33.3 ? setLion(-66.6) : setLion(lion + 33.3)}><img src={Vector2} alt="" /></button>
+                    <button className='icrement' onClick={() => lion < -33.3 ? setLion(0) : setLion(lion - 33.3)}><img src={Vector2} alt="" /></button>
                     <span className='span'>
                         <li className={lion == 0 ? 'image' : ''} onClick={() => setLion(0)}>
                             <b><img className='img' src={Tochka} alt="" /></b>
                         </li>
-                        <li className={lion == -1920 ? 'image' : ''} onClick={() => setLion(-1920)}>
+                        <li className={lion == -33.3 ? 'image' : ''} onClick={() => setLion(-33.3)}>
                             <b><img className='img' src={Tochka} alt="" /></b>
                         </li>
-                        <li className={lion == -3840 ? 'image' : ''} onClick={() => setLion(-3840)}>
+                        <li className={lion == -66.6 ? 'image' : ''} onClick={() => setLion(-66.6)}>
                             <b><img className='img' src={Tochka} alt="" /></b>
                         </li>
                     </span>
