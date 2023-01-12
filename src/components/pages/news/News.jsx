@@ -4,12 +4,16 @@ import Header from '../../header/Header'
 import './News.scss'
 import Next from '../../image/next.png'
 import Footer from '../../footer/Footer'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useLocation, useParams } from 'react-router-dom'
 import { Context } from '../../Context/Context'
 
 function News() {
     const [stat, setStat] = useState(1)
     const {value, setValue} = useContext(Context)
+
+    const local = useLocation()
+    console.log(local.pathname.split('/news/').join(''));
+
     return (
         <>
             <Header />

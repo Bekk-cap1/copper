@@ -11,6 +11,8 @@ function Buy() {
     //     setOrder([...new Set([...order, item])])
     const { id, setId } = useContext(Context)
     const { seter, setSeter } = useContext(Context)
+    const {raqam, setRaqam} = useContext(Context)
+    console.log(raqam);
     return (
         <>
             <Header />
@@ -29,22 +31,24 @@ function Buy() {
                                 <hr />
                                 <div>
                                     {
-                                        seter ? 
-                                        <li>
-                                            <span>
-                                                <img src={seter.img} alt="" />
-                                                <h4>{seter.name}</h4>
-                                            </span>
-                                            <h5>{id} шт.</h5>
-                                            <h6>{id * seter.price} грн</h6>
-                                            <img onClick={()=>setSeter('')} src={Delete} alt="" />
-                                        </li>: ''
+                                        raqam?.map((e)=>(
+                                            <li>
+                                                <span>
+                                                    <img src={e.img} alt="" />
+                                                    <h4>{e.name}</h4>
+                                                </span>
+                                                <h5>{id} шт.</h5>
+                                                <h6>{id * e.price} грн</h6>
+                                                <img onClick={()=>setRaqam([])} src={Delete} alt="" />
+                                            </li>
+
+                                        )) 
                                     }
                                 </div>
                             </div>
                             <div className='buy__right'>
                                 <h2>Итого</h2>
-                                <h3>{id * seter.price} грн</h3>
+                                <h3>{id * raqam.price} грн</h3>
                                 <hr />
                                 <h4>У вас бесплатная <br /> доставка! </h4>
                                 <Link to='/succefull'>

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { data } from '../../../data/data'
 import Header from '../../../header/Header'
 import './Catalog__product.scss'
@@ -19,10 +19,6 @@ function Catalog__product() {
     const { catal, setCatal } = useContext(Context)
     const catRef = useRef()
     const [product, setProduct] = useState(1)
-    // const alona = ()=>{
-    //     catal.price * product
-    // }
-    console.log();
     useEffect(() => {
         catRef.current.style.transform = `translateY(${count}%)`
         catRef.current.style.transition = `0.3s ease-in-out all`
@@ -41,12 +37,27 @@ function Catalog__product() {
     }, [sliderFour])
 
     const {seter, setSeter} = useContext(Context)
+    const {raqam, setRaqam} = useContext(Context)
+    const arrData = []
     const mapper= ()=>{
         setSeter(catal)
         setId(product)
+        data?.map((e) =>{
+            if(e.id == navig)
+                    if(!arrData.includes(e.id)){
+                        arrData.push(e)
+                        setRaqam(arrData)
+                    }
+                       
+            }
+        )
     }
     const {id, setId} = useContext(Context)
 
+
+    const local = useLocation()
+    const navig = local.pathname.split('/catalog/').join('')
+    
     return (
         <>
             <Header />
@@ -59,7 +70,7 @@ function Catalog__product() {
                                 <img className='img' src={Idish} alt="" onClick={() => count > -33.3 ? setCount(-99.9) : setCount(count + 33.3)} />
                                 <div >
                                     <ul ref={catRef}>
-                                        {
+                                        {   
                                             data?.map((e, i) => (
                                                 <li><img src={e.img} alt="" /></li>
                                             ))
@@ -69,7 +80,14 @@ function Catalog__product() {
                                 <img src={Idish} alt="" className='idish' onClick={() => count < -66.6 ? setCount(0) : setCount(count - 33.3)} />
                             </div>
                             <div className='product__right'>
-                                <img src={catal.img} alt="" />
+                                {
+                                    data?.map((e,i)=>(
+                                        navig == e.id?
+                                        <img src={catal.img || e.img} alt="" />
+                                        : ''
+                                    ))
+
+                                }
                             </div>
                             <div className='product__main'>
                                 <h2>Дистиллятор для <br /> получения гидролата 8л</h2>
@@ -83,8 +101,15 @@ function Catalog__product() {
                                 <hr />
                                 <span>
                                     <h2>Цена</h2>
-                                    <b>{catal.price * product} грн</b>
-                                    <h4>{catal.price}грн</h4>
+                                    {
+                                        data?.map((e,i)=>(
+                                            navig == e.id?
+                                            <>
+                                                <b>{catal.price * product || e.price * product} грн</b>
+                                                <h4>{catal.price || e.price}грн</h4>
+                                            </>: ''
+                                        ))
+                                    }
                                 </span>
                                 <div>
                                     <span className='span__div'>
