@@ -7,8 +7,9 @@ function Provider ({children}){
     const [catal, setCatal] = useState({})
     const [seter, setSeter] = useState({})
     const [id, setId] = useState(0)
+    const [userrr, setUserrr] = useState()
     return(
-        <Context.Provider value={{value, setValue, catal, setCatal, seter, setSeter, id, setId}}>
+        <Context.Provider value={{value, setValue, catal, setCatal, seter, setSeter, id, setId, userrr, setUserrr}}>
             {children}
         </Context.Provider>
     )

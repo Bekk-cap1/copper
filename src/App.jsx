@@ -1,6 +1,8 @@
 
-import { Route, Routes } from 'react-router-dom';
+import { useContext, useEffect } from 'react';
+import { Route, Routes, useParams } from 'react-router-dom';
 import './App.css';
+import { Context } from './components/Context/Context';
 import About from './components/pages/about/About';
 import Buy from './components/pages/buy/Buy';
 import Catalog from './components/pages/catalog/Catalog';
@@ -11,6 +13,7 @@ import News_inside from './components/pages/news/news-inside/News_inside'
 import Succefull from './components/pages/succefull/Succefull';
 
 function App() {
+ 
   return (
     <div className="App">
       <Routes>

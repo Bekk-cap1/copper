@@ -30,35 +30,35 @@ function Home() {
     const [count, setCount] = useState(0)
     useEffect(() => {
         slideree.current.style.transition = `0.4s ease-in-out`
-        slideree.current.style.transform = `translate(${count}px)`
+        slideree.current.style.transform = `translate(${count}%)`
     }, [count])
 
     const slideTwo = useRef()
     const [sliderTwo, setSliderTwo] = useState(0)
     useEffect(() => {
         slideTwo.current.style.transition = `0.4s ease-in-out`
-        slideTwo.current.style.transform = `translate(${sliderTwo}px)`
+        slideTwo.current.style.transform = `translate(${sliderTwo}%)`
     }, [sliderTwo])
 
     const slideThree = useRef()
     const [sliderThree, setSliderThree] = useState(0)
     useEffect(() => {
         slideThree.current.style.transition = `0.4s ease-in-out`
-        slideThree.current.style.transform = `translate(${sliderThree}px)`
+        slideThree.current.style.transform = `translate(${sliderThree}%)`
     }, [sliderThree])
 
     const slideFour = useRef()
     const [sliderFour, setSliderFour] = useState(0)
     useEffect(() => {
         slideFour.current.style.transition = `0.4s ease-in-out`
-        slideFour.current.style.transform = `translate(${sliderFour}px)`
+        slideFour.current.style.transform = `translate(${sliderFour}%)`
     }, [sliderFour])
 
     const slideFive = useRef()
     const [sliderFive, setSliderFive] = useState(0)
     useEffect(() => {
         slideFive.current.style.transition = `0.4s ease-in-out`
-        slideFive.current.style.transform = `translate(${sliderFive}px)`
+        slideFive.current.style.transform = `translate(${sliderFive}%)`
     }, [sliderFive])
 
     const sliderWrap = useRef()
@@ -275,16 +275,16 @@ function Home() {
                                 </div>
 
                                 <button className='katalog'>Перейти в каталог</button>
-                                <button className='dicrement' onClick={() => count > 0 ? setCount(count + 1395) : setCount(0)}><img src={Vector1} alt="" /></button>
-                                <button className='icrement' onClick={() => count < -2690 ? setCount(0) : setCount(count - 1395)}><img src={Vector1} alt="" /></button>
+                                <button className='dicrement' onClick={() => count > 0 ? setCount(count + 33.3) : setCount(0)}><img src={Vector1} alt="" /></button>
+                                <button className='icrement' onClick={() => count < -33.3 ? setCount(0) : setCount(count - 33.3)}><img src={Vector1} alt="" /></button>
                                 <ul className='ul'>
                                     <li className={count == 0 ? 'activee' : 'disactive'} onClick={() => setCount(0)}>
                                         <img src={Tocka2} alt="" />
                                     </li>
-                                    <li className={count == -1395 ? 'activee' : 'disactive'} onClick={() => setCount(-1395)}>
+                                    <li className={count == -33.3 ? 'activee' : 'disactive'} onClick={() => setCount(-33.3)}>
                                         <img src={Tocka2} alt="" />
                                     </li>
-                                    <li className={count == -2790 ? 'activee' : 'disactive'} onClick={() => setCount(-2790)}>
+                                    <li className={count == -66.6 ? 'activee' : 'disactive'} onClick={() => setCount(-66.6)}>
                                         <img src={Tocka2} alt="" />
                                     </li>
                                 </ul>
@@ -335,17 +335,17 @@ function Home() {
                             </div>
 
                             <button className='katalog'>Перейти в каталог</button>
-                            <button className='dicrement' onClick={() => sliderTwo > 0 ? setSliderTwo(sliderTwo + 1395) : setSliderTwo(0)}><img src={Vector1} alt="" /></button>
-                            <button className='icrement' onClick={() => sliderTwo < -2690 ? setSliderTwo(0) : setSliderTwo(sliderTwo - 1395)}><img src={Vector1} alt="" /></button>
+                            <button className='dicrement' onClick={() => sliderTwo > 0 ? setSliderTwo(sliderTwo + 33.3) : setSliderTwo(0)}><img src={Vector1} alt="" /></button>
+                            <button className='icrement' onClick={() => sliderTwo < -33.3 ? setSliderTwo(0) : setSliderTwo(sliderTwo - 33.3)}><img src={Vector1} alt="" /></button>
 
                             <ul className='ul'>
                                 <li className={sliderTwo == 0 ? 'activee' : 'disactive'} onClick={() => setSliderTwo(0)}>
                                     <img src={Tocka2} alt="" />
                                 </li>
-                                <li className={sliderTwo == -1395 ? 'activee' : 'disactive'} onClick={() => setSliderTwo(-1395)}>
+                                <li className={sliderTwo == -33.3 ? 'activee' : 'disactive'} onClick={() => setSliderTwo(-33.3)}>
                                     <img src={Tocka2} alt="" />
                                 </li>
-                                <li className={sliderTwo == -2790 ? 'activee' : 'disactive'} onClick={() => setSliderTwo(-2790)}>
+                                <li className={sliderTwo == -66.6 ? 'activee' : 'disactive'} onClick={() => setSliderTwo(-66.6)}>
                                     <img src={Tocka2} alt="" />
                                 </li>
                             </ul>
@@ -406,16 +406,16 @@ function Home() {
                             </div>
 
                             <button className='katalog'>Перейти в каталог</button>
-                            <button className='dicrement' onClick={() => sliderThree > 0 ? setSliderThree(sliderThree + 1395) : setSliderThree(0)}><img src={Vector1} alt="" /></button>
-                            <button className='icrement' onClick={() => sliderThree < -2690 ? setSliderThree(0) : setSliderThree(sliderThree - 1395)}><img src={Vector1} alt="" /></button>
+                            <button className='dicrement' onClick={() => sliderThree > 0 ? setSliderThree(sliderThree + 33.3) : setSliderThree(0)}><img src={Vector1} alt="" /></button>
+                            <button className='icrement' onClick={() => sliderThree < -33.3 ? setSliderThree(0) : setSliderThree(sliderThree - 33.3)}><img src={Vector1} alt="" /></button>
                             <ul className='ul'>
                                 <li className={sliderThree == 0 ? 'activee' : 'disactive'} onClick={() => setSliderThree(0)}>
                                     <img src={Tocka2} alt="" />
                                 </li>
-                                <li className={sliderThree == -1395 ? 'activee' : 'disactive'} onClick={() => setSliderThree(-1395)}>
+                                <li className={sliderThree == -33.3 ? 'activee' : 'disactive'} onClick={() => setSliderThree(-33.3)}>
                                     <img src={Tocka2} alt="" />
                                 </li>
-                                <li className={sliderThree == -2790 ? 'activee' : 'disactive'} onClick={() => setSliderThree(-2790)}>
+                                <li className={sliderThree == -66.6 ? 'activee' : 'disactive'} onClick={() => setSliderThree(-66.6)}>
                                     <img src={Tocka2} alt="" />
                                 </li>
                             </ul>
@@ -467,16 +467,16 @@ function Home() {
                                 </div>
 
                                 <button className='katalog'>Перейти в каталог</button>
-                                <button className='dicrement' onClick={() => sliderFour > 0 ? setSliderFour(sliderFour + 1395) : setSliderFour(0)}><img src={Vector1} alt="" /></button>
-                                <button className='icrement' onClick={() => sliderFour < -2690 ? setSliderFour(0) : setSliderFour(sliderFour - 1395)}><img src={Vector1} alt="" /></button>
+                                <button className='dicrement' onClick={() => sliderFour > 0 ? setSliderFour(sliderFour + 33.3) : setSliderFour(0)}><img src={Vector1} alt="" /></button>
+                                <button className='icrement' onClick={() => sliderFour < -33.3 ? setSliderFour(0) : setSliderFour(sliderFour - 33.3)}><img src={Vector1} alt="" /></button>
                                 <ul className='ul'>
                                     <li className={sliderFour == 0 ? 'activee' : 'disactive'} onClick={() => setSliderFour(0)}>
                                         <img src={Tocka2} alt="" />
                                     </li>
-                                    <li className={sliderFour == -1395 ? 'activee' : 'disactive'} onClick={() => setSliderFour(-1395)}>
+                                    <li className={sliderFour == -33.3 ? 'activee' : 'disactive'} onClick={() => setSliderFour(-33.3)}>
                                         <img src={Tocka2} alt="" />
                                     </li>
-                                    <li className={sliderFour == -2790 ? 'activee' : 'disactive'} onClick={() => setSliderFour(-2790)}>
+                                    <li className={sliderFour == -66.6 ? 'activee' : 'disactive'} onClick={() => setSliderFour(-66.6)}>
                                         <img src={Tocka2} alt="" />
                                     </li>
                                 </ul>
@@ -544,16 +544,16 @@ function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                <button className='dicrement' onClick={() => sliderFive > 0 ? setSliderFive(sliderFive + 1425) : setSliderFive(0)}><img src={Vector1} alt="" /></button>
-                                <button className='icrement' onClick={() => sliderFive < -2690 ? setSliderFive(0) : setSliderFive(sliderFive - 1425)}><img src={Vector1} alt="" /></button>
+                                <button className='dicrement' onClick={() => sliderFive > 0 ? setSliderFive(sliderFive + 33.3) : setSliderFive(0)}><img src={Vector1} alt="" /></button>
+                                <button className='icrement' onClick={() => sliderFive < -33.3 ? setSliderFive(0) : setSliderFive(sliderFive - 33.3)}><img src={Vector1} alt="" /></button>
                                 <ul className='ul'>
                                     <li className={sliderFive == 0 ? 'activee' : 'disactive'} onClick={() => setSliderFive(0)}>
                                         <img src={Tocka2} alt="" />
                                     </li>
-                                    <li className={sliderFive == -1425 ? 'activee' : 'disactive'} onClick={() => setSliderFive(-1425)}>
+                                    <li className={sliderFive == -33.3 ? 'activee' : 'disactive'} onClick={() => setSliderFive(-33.3)}>
                                         <img src={Tocka2} alt="" />
                                     </li>
-                                    <li className={sliderFive == -2850 ? 'activee' : 'disactive'} onClick={() => setSliderFive(-2850)}>
+                                    <li className={sliderFive == -66.6 ? 'activee' : 'disactive'} onClick={() => setSliderFive(-66.6)}>
                                         <img src={Tocka2} alt="" />
                                     </li>
                                 </ul>

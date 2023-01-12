@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   const [spam, setSpam] = useState(false)
-  console.log(spam);
   return (
     <div className='contai'>
         <div className="header__logo">

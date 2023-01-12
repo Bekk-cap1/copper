@@ -24,20 +24,20 @@ function Catalog__product() {
     // }
     console.log();
     useEffect(() => {
-        catRef.current.style.transform = `translateY(${count}px)`
+        catRef.current.style.transform = `translateY(${count}%)`
         catRef.current.style.transition = `0.3s ease-in-out all`
     })
     const slideFive = useRef()
     const [sliderFive, setSliderFive] = useState(0)
     useEffect(() => {
         slideFive.current.style.transition = `0.4s ease-in-out`
-        slideFive.current.style.transform = `translate(${sliderFive}px)`
+        slideFive.current.style.transform = `translate(${sliderFive}%)`
     }, [sliderFive])
     const slideFour = useRef()
     const [sliderFour, setSliderFour] = useState(0)
     useEffect(() => {
         slideFour.current.style.transition = `0.4s ease-in-out`
-        slideFour.current.style.transform = `translate(${sliderFour}px)`
+        slideFour.current.style.transform = `translate(${sliderFour}%)`
     }, [sliderFour])
 
     const {seter, setSeter} = useContext(Context)
@@ -56,7 +56,7 @@ function Catalog__product() {
                         <h3><Link to='/home'>Главная</Link> / <Link className='a__catal' to='/catalog'>Каталог</Link> / <strong>Дистиллятор для получения гидролата 8л</strong></h3>
                         <div>
                             <div className='product__left'>
-                                <img className='img' src={Idish} alt="" onClick={() => count > -115 ? setCount(-460) : setCount(count + 115)} />
+                                <img className='img' src={Idish} alt="" onClick={() => count > -33.3 ? setCount(-99.9) : setCount(count + 33.3)} />
                                 <div >
                                     <ul ref={catRef}>
                                         {
@@ -66,7 +66,7 @@ function Catalog__product() {
                                         }
                                     </ul>
                                 </div>
-                                <img src={Idish} alt="" className='idish' onClick={() => count < -345 ? setCount(0) : setCount(count - 115)} />
+                                <img src={Idish} alt="" className='idish' onClick={() => count < -66.6 ? setCount(0) : setCount(count - 33.3)} />
                             </div>
                             <div className='product__right'>
                                 <img src={catal.img} alt="" />
@@ -182,16 +182,16 @@ function Catalog__product() {
                                 </div>
                             </div>
                         </div>
-                        <button className='dicrement' onClick={() => sliderFive > 0 ? setSliderFive(sliderFive + 1425) : setSliderFive(0)}><img src={Vector1} alt="" /></button>
-                        <button className='icrement' onClick={() => sliderFive < -2690 ? setSliderFive(0) : setSliderFive(sliderFive - 1425)}><img src={Vector1} alt="" /></button>
+                        <button className='dicrement' onClick={() => sliderFive > 0 ? setSliderFive(sliderFive + 33.3) : setSliderFive(0)}><img src={Vector1} alt="" /></button>
+                        <button className='icrement' onClick={() => sliderFive < -33.3 ? setSliderFive(0) : setSliderFive(sliderFive - 33.3)}><img src={Vector1} alt="" /></button>
                         <ul className='ul'>
                             <li className={sliderFive == 0 ? 'activee' : 'disactive'} onClick={() => setSliderFive(0)}>
                                 <img src={Tocka2} alt="" />
                             </li>
-                            <li className={sliderFive == -1425 ? 'activee' : 'disactive'} onClick={() => setSliderFive(-1425)}>
+                            <li className={sliderFive == -33.3 ? 'activee' : 'disactive'} onClick={() => setSliderFive(-33.3)}>
                                 <img src={Tocka2} alt="" />
                             </li>
-                            <li className={sliderFive == -2850 ? 'activee' : 'disactive'} onClick={() => setSliderFive(-2850)}>
+                            <li className={sliderFive == -66.6 ? 'activee' : 'disactive'} onClick={() => setSliderFive(-66.6)}>
                                 <img src={Tocka2} alt="" />
                             </li>
                         </ul>
@@ -245,16 +245,16 @@ function Catalog__product() {
                         </div>
 
                         <button className='katalog'>Перейти в каталог</button>
-                        <button className='dicrement' onClick={() => sliderFour > 0 ? setSliderFour(sliderFour + 1395) : setSliderFour(0)}><img src={Vector1} alt="" /></button>
-                        <button className='icrement' onClick={() => sliderFour < -2690 ? setSliderFour(0) : setSliderFour(sliderFour - 1395)}><img src={Vector1} alt="" /></button>
+                        <button className='dicrement' onClick={() => sliderFour > 0 ? setSliderFour(sliderFour + 33.3) : setSliderFour(0)}><img src={Vector1} alt="" /></button>
+                        <button className='icrement' onClick={() => sliderFour < -33.3 ? setSliderFour(0) : setSliderFour(sliderFour - 33.3)}><img src={Vector1} alt="" /></button>
                         <ul className='ul'>
                             <li className={sliderFour == 0 ? 'activee' : 'disactive'} onClick={() => setSliderFour(0)}>
                                 <img src={Tocka2} alt="" />
                             </li>
-                            <li className={sliderFour == -1395 ? 'activee' : 'disactive'} onClick={() => setSliderFour(-1395)}>
+                            <li className={sliderFour == -33.3 ? 'activee' : 'disactive'} onClick={() => setSliderFour(-33.3)}>
                                 <img src={Tocka2} alt="" />
                             </li>
-                            <li className={sliderFour == -2790 ? 'activee' : 'disactive'} onClick={() => setSliderFour(-2790)}>
+                            <li className={sliderFour == -66.6 ? 'activee' : 'disactive'} onClick={() => setSliderFour(-66.6)}>
                                 <img src={Tocka2} alt="" />
                             </li>
                         </ul>

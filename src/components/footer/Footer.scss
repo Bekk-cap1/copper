@@ -81,3 +81,48 @@
         }
     }
 }
+
+
+
+@media screen and (max-width: 600px) {
+    .foooter{
+        padding: 0;
+        height: auto;
+        .container{
+            width: 100%;
+        }
+        .footer{
+            width: 100%;
+            padding: 0;
+            .footer__inner{
+                padding: 20px;
+                display: block;
+                .inner__left{
+                    h6{
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                    h5{
+                        margin-top: 10px;
+                        color: #fff;
+                    }
+                }
+                .inner__right{
+                    display: flex;
+                    flex-wrap: wrap;
+                    ul{
+                        margin-right: 5%;
+                        padding-left: 0;
+                        li{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            button{
+                bottom: 40px;
+                right: 0;
+            }
+        }
+    }
+}

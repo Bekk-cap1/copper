@@ -1,10 +1,10 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { maslo } from '../../data/maslo'
 import Header from '../../header/Header'
 import './News.scss'
 import Next from '../../image/next.png'
 import Footer from '../../footer/Footer'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { Context } from '../../Context/Context'
 
 function News() {

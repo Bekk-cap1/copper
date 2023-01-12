@@ -9,10 +9,11 @@
         background-position: 100%;
         background-size: 100%;
         background-repeat: no-repeat;
+        margin-top: -40px;
     .home{
         position: relative;
         overflow: hidden;
-        width: 1920px;
+        width: 100%;
         margin: 0 auto;
         .dicrement{
             position: absolute;
@@ -73,15 +74,16 @@
             }
         }
         .homee{
-            width: 5720px;
+            width: 300%;
             display: flex;
             margin: 0 auto;
+            overflow: hidden;
             .home__header{
                 padding: 0 262px;
                 height: 920px;
                 margin-top: -40px;
                 color: #fff;
-                width: 1920px;
+                width: 100%;
                 div{
                     b{
                         h2{
@@ -961,10 +963,9 @@
             }
         }
         .inner1{
-            width: 1395px;
+            width: 100%;
             height: 600px;
             margin: 0 auto;
-            margin: 0;
             padding: 0;
             overflow: hidden;
             transition: 0.4s ease-in-out all;
@@ -1040,7 +1041,7 @@
         background: linear-gradient(92deg, #72664B 0.2%, #25463A 98%) ;
         
         .main__copper{
-            width: 1920px;
+            width: 100%;
             color: #fff;
             height: 483px;
             margin: 0 auto;
@@ -1138,7 +1139,6 @@
             width: 1395px;
             height: 600px;
             margin: 0 auto;
-            margin: 0;
             padding: 0;
             overflow: hidden;
             transition: 0.4s ease-in-out all;
@@ -1221,7 +1221,7 @@
         padding: 0 262px;
         height: 900px;
         position: relative; 
-        width: 1920px;
+        width: 100%;
         h2{
             font-size: 50px;
             padding-top: 50px;
@@ -1255,7 +1255,6 @@
             width: 1395px;
             height: 600px;
             margin: 0 auto;
-            margin: 0;
             padding: 0;
             overflow: hidden;
             transition: 0.4s ease-in-out all;
@@ -1353,7 +1352,7 @@
             text-align: center;
             position: relative;
             margin: 0 auto;
-            width: 1920px;
+            width: 100%;
             padding: 0 262px;
             h2{
                 font-size: 58px;
@@ -1386,7 +1385,6 @@
                 width: 1425px;
                 height: 600px;
                 margin: 0 auto;
-                margin: 0;
                 padding: 0;
                 overflow: hidden;
                 transition: 0.4s ease-in-out all;
@@ -1512,9 +1510,9 @@
                     &::before{
                         content: url(../../image/main555.png);
                         position: absolute;
-                        top: 15px;
+                        top: 10px;
                         object-fit: cover;
-                        left: 18px;
+                        left: 8px;
                     }
                 }
                 .down__item6{
@@ -1524,7 +1522,7 @@
                         position: absolute;
                         top: 15px;
                         object-fit: cover;
-                        left: 18px;
+                        left: 10px;
                     }
                 }
                 .down__item7{
@@ -1534,7 +1532,7 @@
                         position: absolute;
                         top: 15px;
                         object-fit: cover;
-                        left: 18px;
+                        left: 10px;
                     }
                 }
                 .down__item8{
@@ -1544,7 +1542,7 @@
                         position: absolute;
                         top: 15px;
                         object-fit: cover;
-                        left: 18px;
+                        left: 14px;
                     }
                 }
             }
@@ -1564,7 +1562,7 @@
         height: 100vh;
         background-repeat: no-repeat;
         font-size: 20px;
-        margin-top: -50px;
+        margin-top: 0px;
         .home{
             width: 100%;
             .homee{
@@ -1647,7 +1645,6 @@
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
-                margin-left: 10px;
                 .header__li1, .header__li2, .header__li3, .header__li4,.header__li5,.header__li6{
                     width: 44%;
                     border-radius: 10px;
@@ -1717,6 +1714,251 @@
                         font-size: 20px;
                         bottom: 10px;
                     }
+                }
+            }
+        }
+
+        .mainn{
+            width: 100%;
+            .main__inner{       
+                width: 100%;
+                padding: 0;
+                .inner{
+                    width: 100%;
+                    .main__list{
+                        width: 900%;
+                        div{
+                            width: 100%;
+                            img{
+                                width: 100%;
+                            }
+                            span{
+                                width: 100%;
+                                font-size: 16px;
+                                strong{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                h2{
+                    font-size: 30px;
+                    width: 100%;
+                }
+                .dicrement, .icrement{
+                    display: none;
+                }
+                .ul{
+                    bottom: 180px;
+                    left: 40%;
+                }
+            }
+            
+            .container{
+                width: 100%;
+            }
+        }
+        .main__inner1{       
+            width: 100%;
+            padding: 0;
+            h2{
+                font-size: 30px;
+                width: 100%;
+            }
+            .inner1{
+                width: 100%;
+                .main__list1{
+                    width: 900%;
+                    div{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                        span{
+                            width: 100%;
+                            font-size: 16px;
+                            strong{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            h2{
+                font-size: 30px;
+                width: 100%;
+            }
+            .dicrement, .icrement{
+                display: none;
+            }
+            .ul{
+                bottom: 180px;
+                left: 40%;
+            }
+        }
+        .coppper{       
+            background-image: url(../../image/5.png);
+            width: 100%;
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            object-fit: cover;
+            padding-left: 20px;
+            .main__copper{
+                padding: 0;
+                width: 100%;
+                height: auto;
+                &::before{
+                    content: none;
+                }
+                &::after{
+                    content: none;
+                }
+                .copper__inner{
+                    h2{
+                        width: 100%;
+                        font-size: 60px;
+                    }
+                    h4{
+                        font-size: 14px;
+                        width: 60%;
+                    }
+                    &::before{
+                        content: none;
+                    }
+                    &::after{
+                        content: none;
+                    }
+
+                }
+            }
+        }
+        .main__inner2{       
+            width: 100%;
+            padding: 0;
+            h2{
+                font-size: 30px;
+                width: 100%;
+            }
+            .inner2{
+                width: 100%;
+                .main__list2{
+                    width: 900%;
+                    div{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                        span{
+                            width: 100%;
+                            font-size: 16px;
+                            strong{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            h2{
+                font-size: 30px;
+                width: 100%;
+            }
+            .dicrement, .icrement{
+                display: none;
+            }
+            .ul{
+                bottom: 180px;
+                left: 40%;
+            }
+        }
+        .main__inner3{       
+            width: 100%;
+            padding: 0;
+            h2{
+                font-size: 30px;
+                width: 100%;
+            }
+            .inner3{
+                width: 100%;
+                .main__list3{
+                    width: 900%;
+                    div{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                        span{
+                            width: 100%;
+                            font-size: 16px;
+                            strong{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            h2{
+                font-size: 30px;
+                width: 100%;
+            }
+            .dicrement, .icrement{
+                display: none;
+            }
+            .ul{
+                bottom: 180px;
+                left: 40%;
+            }
+        }
+        .main__footer{
+            .main__footer__up{
+                width: 100%;
+                padding: 20px 20px;
+                h2{
+                    font-size: 30px;
+                    width: 100%;
+                }
+                .lister{
+                    width: 100%;
+                    .up__list{
+                        width: 900%;
+                        div{
+                            width: 100%;
+                            height: auto;
+                            p{
+                                font-size: 14px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .dicrement, .icrement{
+                    display: none;
+                }
+                .ul{
+                    left: 40%;
+                }
+            }
+
+        }
+    }
+    .main__footer__down{
+        .container{
+            width: 100%;
+            padding: 0;
+        }
+        h2{
+            font-size: 30px;
+            width: 100%;
+        }
+        .down__list{
+            height: auto;
+            div{
+                width: 40%;
+                margin: 5%;
+                height: auto;
+                h6{
+                    font-size: 16px;
                 }
             }
         }

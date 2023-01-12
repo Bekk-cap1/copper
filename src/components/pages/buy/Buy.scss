@@ -139,3 +139,63 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .buy__header{
+        width: 100%;
+        .container{
+            width: 100%;
+            padding: 20px;
+            .buy__inner{
+                h3{
+                    font-size: 14px;
+                }
+                h2{
+                    font-size: 22px;
+                }
+                div{
+                    display: block;
+                    .buy__left{
+                        ul{
+                            display: none;
+                        }
+                        div{
+                            display: block;
+                            height: auto;
+                            li{
+                                flex-wrap: wrap;
+                                span{
+                                    img{
+                                        margin-top: 0;
+                                    }
+                                }
+                                h5{
+                                    margin-top: 0px;
+                                }
+                                h6{
+                                    margin-top: 15px;
+                                }
+                                img{
+                                    margin-top: -20px;
+                                }
+                            }
+                        }
+                    }
+
+                    .buy__right{
+                        margin-left: 0;
+                        width: 100%;
+                        h2{
+                            font-size: 14px;
+                            margin-top: 50px;
+                        }
+                        h3{
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

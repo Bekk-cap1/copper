@@ -36,7 +36,7 @@ function Buy() {
                                                 <h4>{seter.name}</h4>
                                             </span>
                                             <h5>{id} шт.</h5>
-                                            <h6>{id * seter.price}</h6>
+                                            <h6>{id * seter.price} грн</h6>
                                             <img onClick={()=>setSeter('')} src={Delete} alt="" />
                                         </li>: ''
                                     }

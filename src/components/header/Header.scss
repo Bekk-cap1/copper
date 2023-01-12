@@ -13,7 +13,7 @@
     color: #fff;
     display: flex;
     justify-content: space-between;
-    width: 1920px;
+    width: 100%;
     .spanlar, .active, .activee{
         display: none;
     }
@@ -124,21 +124,22 @@ a{
                 }
                 .span__three{
                     transform: rotate(45deg);
-                    margin-top: -1px;
+                    margin-top: -1.5px;
+                    margin-left: -0.5px;
                 }
 
             }
             .active{
                 width: 100%;
-                height: 50vh;
+                height: 100vh;
                 background: linear-gradient(to right, #72664B, #25463A) ;
                 z-index: 99;
                 position: absolute;
                 right: 0;
                 top: 45px;
                 margin: 0;
-                height: 305px;
                 padding: 0;
+                display: block;
                 span{
                     left: 100%;
                 }

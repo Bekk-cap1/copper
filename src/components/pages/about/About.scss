@@ -282,3 +282,226 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .header__about{
+        height: 800px;
+        background-image: url(../../image/Bijir.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-top: -27vh;
+        .container{
+            width: 100%;
+            padding: 20px;
+            .about__inner{
+                padding: 0;
+                .about__inner__text{
+                    margin-top: 27vh;
+                    width: 100%;
+                    h3{
+                        padding-top: 0;
+                        font-size: 14px;
+                    }
+                    h2{
+                        font-size: 40px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                    hr{
+                        width: 60%;
+                        margin-left: 0;
+                    }
+                    h4{
+                        font-size: 20px;
+                        &::before{
+                            top: -20px;
+                        }
+                        &::after{
+                            bottom: -30px;
+                            right: 0;
+                        }
+                    }
+                    span{
+                        width: 100%;
+                        h5{
+                            font-size: 20px;
+                            line-height: 21px;
+                            margin-right: 20%;
+                        }
+                        img{
+                            width: 136px;
+                            height: 60px;
+                            display: block;
+                        }
+                    }
+                }
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .main__about{
+        width: 100%;
+        height: auto;
+        .container{
+            width: 100%;
+            padding: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+            .main__about__inner{
+                padding: 0;
+                width: 100%;
+                display: block;
+                .about__inner__left{
+                    width: 100%;
+                    color: #031412;
+                    h3{
+                        font-size: 20px;
+                        text-align: center;
+                        margin-bottom: 0;
+                    }
+                    p{
+                        width: 100%;
+                        font-size: 14px;
+                    }
+                }
+                .about__inner__right{
+                    width: 100%;
+                    padding-left: 0;
+                    margin-left: 0;
+                    h2{
+                        font-size: 30px;
+                        text-align: center;
+                    }
+                    h5{
+                        font-size: 100px;
+                        width: 100%;
+                        margin-top: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .about__history{
+            width: 100%;
+            height: auto;
+            background: #000000;
+            .history__inner{
+                width: 100%;
+                background: none;
+                height: auto;
+                h2{
+                    display: none;
+                }
+                &::after{
+                    content: none;
+                }
+                &::before{
+                    content: none;
+                }
+                .container{
+                    &::after{
+                        content: none;
+                    }
+                    &::before{
+                        content: none;
+                    }
+                    div{
+                        &::after{
+                            content: none;
+                        }
+                        &::before{
+                            content: none;
+                        }
+                        div{
+                            &::after{
+                                content: none;
+                            }
+                            &::before{
+                                content: none;
+                            }
+                            h3{
+                                font-size: 30px;
+                                padding-top: 10px;
+                            }
+                            span{
+                                width: 100%;
+                                display: block;
+                                p{
+                                    width: 100%;
+                                }
+                                text-align: start;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .about__geogrofy{
+        width: 100%;
+        height: auto;
+        .container{
+            width: 100%;
+            padding: 20px;
+            overflow: hidden;
+            display: block;
+            .geografy__inner{
+                h2{
+                    font-size: 30px;
+                    text-align: center;
+                }
+                p{
+                    width: 100%;
+                    font-size: 14px;
+                    line-height: 18px;
+                    text-align: center;
+                }
+            }
+            img{
+                width: 100%;
+                // margin-left: -60vh;
+            }
+        }
+    }
+
+    .about__daraxt{
+        width: 100%;
+        .container{
+            width: 100%;
+            padding: 20px;
+            .daraxt__inner{
+                width: 100%;
+                display: block;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                .daraxt__right{
+                    text-align: center;
+                    h2{
+                        width: 100%;
+                        font-size: 30px;
+                        text-align: center;
+                    }
+                    p{
+                        width: 100%;
+                        font-size: 14px;
+                        line-height: 18px;
+                        text-align: center;
+                    }
+                    div{
+                        margin-bottom: 10px;
+                        img{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

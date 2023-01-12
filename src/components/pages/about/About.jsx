@@ -39,7 +39,7 @@ function About() {
                     <div className="container">
                         <div className="main__about__inner">
                             <div className="about__inner__left">
-                                <h3>Наши <br /> клиенты</h3>
+                                <h3>Наши клиенты</h3>
                                 <p>Мы требовательны к себе, чтобы каждый день становится лучше для наших клиентов и находить лучшие решения для каждого из них</p>
                             </div>
                             <div className="about__inner__right">
@@ -82,7 +82,7 @@ function About() {
                 <div className="about__geogrofy">
                     <div className="container">
                         <div className="geografy__inner">
-                            <h2>Наша <br /> география</h2>
+                            <h2>Наша география</h2>
                             <p>Наше производство находится в Украине, но клиенты из более чем 50 стран радуются товарам, приобретенным в нашем магазине.</p>
                         </div>
                         <img src={Karta} alt="" />
@@ -94,7 +94,7 @@ function About() {
                         <div className="daraxt__inner">
                             <img src={daraxt} alt="" />
                             <div className="daraxt__right">
-                                <h2>Наши <br /> ценности</h2>
+                                <h2>Наши ценности</h2>
                                 <p>Наше производство находится в Украине, но клиенты из более чем 50 стран радуются товарам, приобретенным в нашем магазине. </p>
                                 <div>
                                     <img src={Page1} alt="" />

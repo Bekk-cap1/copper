@@ -156,3 +156,103 @@
         }
     }
 }
+
+
+@media screen and (max-width: 600px){
+    .header__catalog{
+        width: 100%;
+        .container{
+            width: 100%;
+            padding: 20px;
+            .catalog__inner{
+                h3{
+                    font-size: 16px;
+                }
+                h1{
+                    font-size: 24px;
+                }
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        width: 40%;
+                        padding-left: 0;
+                        margin: 5%;
+                        img{
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                        h4{
+                            margin-top: -60px;
+                        }
+                    }
+                }
+            }
+
+            .main__search{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                div{
+                    width: 100%;
+                    margin-right: 15px;
+                }
+                .main__search__left{
+                    width: 100%;
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    h6{
+                        font-size: 14px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .mapper{
+                width: 100%;
+                overflow: auto;
+                height: auto;
+                a{
+                    width: 100%;
+                    li{
+                        width: 100%;
+                        margin: 0;
+                        img{
+                            width: 100%;
+                        }
+                        span{
+                            width: 100%;
+                            h4{
+                                color: #000;
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pages{
+                width: 100%;
+                .page__ul{
+                    li{
+                        margin: 5px;
+                        width: 16.5%;
+                        padding: 0;
+                    }
+                    ul{
+                        width: 61%;
+                        li{
+                            padding: 20px;   
+                            
+                        }
+                    }
+                    .next{
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+

@@ -40,3 +40,38 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .suc__header{
+        width: 100%;
+        .container{
+            width: 100%;
+            padding: 20px;
+            .suc__inner{
+                margin-top: 20px;
+                .kall{
+                    margin-left: 80px;
+                    width: 80%;
+                }
+                .prich{
+                    margin-left: 0;
+                }
+            }
+            .suc__right{
+                width: 100%;
+                h2{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+                a{
+                    button{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
